@@ -3,117 +3,83 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Varshini Crackers</title>
 
-<style>
-body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:#f5f5f5;
-}
-
-header{
-    background:#d60000;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
-
-header h1{
-    margin:0;
-    font-size:32px;
-}
-
-header p{
-    margin-top:8px;
-}
-
-.banner{
-    background:linear-gradient(90deg,#ff9800,#ff3d00);
-    color:white;
-    text-align:center;
-    padding:40px 20px;
-}
-
-.banner h2{
-    margin:0;
-    font-size:28px;
-}
-
-.products{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-    gap:20px;
-    padding:20px;
-}
-
-.card{
-    background:white;
-    border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,0.15);
-    text-align:center;
-    padding:15px;
-}
-
-.card img{
-    width:100%;
-    border-radius:8px;
-}
-
-.price{
-    color:red;
-    font-size:22px;
-    font-weight:bold;
-}
-
-button{
-    background:red;
-    color:white;
-    border:none;
-    padding:10px 18px;
-    border-radius:6px;
-    cursor:pointer;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<header>
-<h1>🎆 Varshini Crackers 🎆</h1>
-<p>Wholesale Crackers Online Store</p>
+<header class="header">
+    <h1>🎆 VARSHINI CRACKERS 🎆</h1>
+    <p>Wholesale Sivakasi Crackers Online Store</p>
 </header>
 
-<div class="banner">
-<h2>Welcome to Varshini Crackers</h2>
-<p>Best Quality | Best Price | Sivakasi Crackers</p>
-</div>
+<section class="banner">
+    <h2>2026 Special Offer Price List</h2>
+    <p>Best Quality • Best Discount • Fast Delivery</p>
+</section>
 
-<div class="products">
+<section class="product-section">
 
-<div class="card">
-<img src="https://res.cloudinary.com/yjt7gvi3/image/upload/v1785665471/IMG-20250906-WA0023_ndemzk.jpg" alt="Flower Pot">
-<h3>Flower Pot</h3>
-<p class="price">₹120</p>
-<button>Add to Cart</button>
-</div>
+<table class="product-table">
 
-<div class="card">
-<img src="https://via.placeholder.com/200x200.png?text=Rocket">
-<h3>Rocket</h3>
-<p class="price">₹250</p>
-<button>Add to Cart</button>
-</div>
+<thead>
 
-<div class="card">
-<img src="https://via.placeholder.com/200x200.png?text=Sparklers">
-<h3>Sparklers</h3>
-<p class="price">₹80</p>
-<button>Add to Cart</button>
-</div>
+<tr>
 
-</div>
+<th>S.No</th>
 
-</body>
-</html>
+<th>Image</th>
+
+<th>Product</th>
+
+<th>Offer</th>
+
+<th>MRP</th>
+
+<th>Qty</th>
+
+<th>Cart</th>
+
+</tr>
+
+</thead>
+
+<tbody id="productTable">
+
+<tr>
+
+<td>1</td>
+
+<td>
+<img src="https://res.cloudinary.com/yjt7gvi3/image/upload/v1785665471/IMG-20250906-WA0023_ndemzk.jpg">
+</td>
+
+<td>Flower Pot</td>
+
+<td>₹120</td>
+
+<td><del>₹150</del></td>
+
+<td>
+
+<button onclick="minusQty(1)">-</button>
+
+<span id="qty1">0</span>
+
+<button onclick="plusQty(1)">+</button>
+
+</td>
+
+<td>
+
+<button onclick="addCart(1)">
+Add
+</button>
+
+</td>
+
+</tr>
