@@ -4,99 +4,174 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Varshini Crackers</title>
+<title>VARSHINI CRACKERS</title>
 
-<link rel="stylesheet" href="style.css">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #222;
+}
+
+.header {
+    text-align: center;
+    padding: 15px 10px 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 5px;
+}
+
+.brand {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 1.05;
+}
+
+.subtitle {
+    margin: 6px 0 0;
+    font-size: 14px;
+}
+
+.offer-title {
+    text-align: center;
+    margin: 18px 10px 5px;
+    font-size: 22px;
+}
+
+.offer-text {
+    text-align: center;
+    margin: 0 10px 18px;
+    font-size: 14px;
+}
+
+/* Product card */
+.product-card {
+    width: 92%;
+    max-width: 430px;
+    margin: 0 auto 25px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 12px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+.serial {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Image size fixed */
+.product-image {
+    width: 100%;
+    height: 240px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin: 12px 0 5px;
+}
+
+.price {
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 5px 0 12px;
+}
+
+/* Large visible button */
+.view-button {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 13px 10px;
+    border: none;
+    border-radius: 8px;
+    background: #222;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (min-width: 700px) {
+    .product-card {
+        max-width: 500px;
+    }
+
+    .product-image {
+        height: 300px;
+    }
+}
+</style>
 </head>
 
 <body>
 
 <header class="header">
-    <h1>🎆 VARSHINI CRACKERS 🎆</h1>
-    <p>Wholesale Sivakasi Crackers Online Store</p>
+
+    <!-- உங்கள் logo file name-ஐ இங்கே மாற்றவும் -->
+    <img src="logo.png" class="logo" alt="Varshini Crackers Logo">
+
+    <h1 class="brand">VARSHINI<br>CRACKERS</h1>
+
+    <p class="subtitle">
+        Wholesale Product Catalogue
+    </p>
+
 </header>
 
-<section class="hero">
-    <h2>Celebrate More, Save More!</h2>
-    <p>Quality Crackers at Wholesale Prices</p>
-</section>
+<h2 class="offer-title">
+    2026 Special Offer Price List
+</h2>
 
-<main>
+<p class="offer-text">
+    Best Quality • Best Discount • Fast Delivery
+</p>
 
-<h2 class="section-title">Our Products</h2>
+<div class="product-card">
 
-<div id="productList" class="product-grid"></div>
+    <div class="serial">1</div>
 
-<section class="cart-section">
+    <!-- உங்கள் product image -->
+    <img
+        src="product1.jpg"
+        class="product-image"
+        alt="Product"
+    >
 
-    <h2>🛒 Your Cart</h2>
-
-    <div id="cartItems">
-        <p class="empty-cart">Your cart is empty</p>
+    <div class="product-name">
+        Flower Pot
     </div>
 
-    <div class="cart-total">
-        <strong>Total Amount:</strong>
-        ₹<span id="cartTotal">0</span>
+    <div class="price">
+        ₹120
     </div>
 
-</section>
+    <div class="view-button">
+        View Product
+    </div>
 
-<section class="customer-section">
-
-    <h2>📦 Customer Details</h2>
-
-    <input
-        type="text"
-        id="customerName"
-        placeholder="Customer Name"
-    >
-
-    <input
-        type="tel"
-        id="customerPhone"
-        placeholder="Mobile Number"
-    >
-
-    <input
-        type="email"
-        id="customerEmail"
-        placeholder="Email Address"
-    >
-
-    <textarea
-        id="customerAddress"
-        placeholder="Delivery Address"
-        rows="4"
-    ></textarea>
-
-    <input
-        type="text"
-        id="customerPincode"
-        placeholder="Pincode"
-    >
-
-    <h3>Payment Method</h3>
-
-    <label class="payment-option">
-        <input type="radio" name="payment" value="Cash on Delivery" checked>
-        Cash on Delivery
-    </label>
-
-    <button class="whatsapp-btn" onclick="sendWhatsAppOrder()">
-        📲 Submit Order on WhatsApp
-    </button>
-
-</section>
-
-</main>
-
-<footer>
-    <p>© 2026 Varshini Crackers</p>
-    <p>Wholesale Crackers | Sivakasi</p>
-</footer>
-
-<script src="script.js"></script>
+</div>
 
 </body>
 </html>
