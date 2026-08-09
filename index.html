@@ -7,7 +7,6 @@
 <title>Varshini Crackers</title>
 
 <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
@@ -17,69 +16,87 @@
     <p>Wholesale Sivakasi Crackers Online Store</p>
 </header>
 
-<section class="banner">
-    <h2>2026 Special Offer Price List</h2>
-    <p>Best Quality • Best Discount • Fast Delivery</p>
+<section class="hero">
+    <h2>Celebrate More, Save More!</h2>
+    <p>Quality Crackers at Wholesale Prices</p>
 </section>
 
-<section class="product-section">
+<main>
 
-<table class="product-table">
+<h2 class="section-title">Our Products</h2>
 
-<thead>
+<div id="productList" class="product-grid"></div>
 
-<tr>
+<section class="cart-section">
 
-<th>S.No</th>
+    <h2>🛒 Your Cart</h2>
 
-<th>Image</th>
+    <div id="cartItems">
+        <p class="empty-cart">Your cart is empty</p>
+    </div>
 
-<th>Product</th>
+    <div class="cart-total">
+        <strong>Total Amount:</strong>
+        ₹<span id="cartTotal">0</span>
+    </div>
 
-<th>Offer</th>
+</section>
 
-<th>MRP</th>
+<section class="customer-section">
 
-<th>Qty</th>
+    <h2>📦 Customer Details</h2>
 
-<th>Cart</th>
+    <input
+        type="text"
+        id="customerName"
+        placeholder="Customer Name"
+    >
 
-</tr>
+    <input
+        type="tel"
+        id="customerPhone"
+        placeholder="Mobile Number"
+    >
 
-</thead>
+    <input
+        type="email"
+        id="customerEmail"
+        placeholder="Email Address"
+    >
 
-<tbody id="productTable">
+    <textarea
+        id="customerAddress"
+        placeholder="Delivery Address"
+        rows="4"
+    ></textarea>
 
-<tr>
+    <input
+        type="text"
+        id="customerPincode"
+        placeholder="Pincode"
+    >
 
-<td>1</td>
+    <h3>Payment Method</h3>
 
-<td>
-<img src="https://res.cloudinary.com/yjt7gvi3/image/upload/v1785665471/IMG-20250906-WA0023_ndemzk.jpg">
-</td>
+    <label class="payment-option">
+        <input type="radio" name="payment" value="Cash on Delivery" checked>
+        Cash on Delivery
+    </label>
 
-<td>Flower Pot</td>
+    <button class="whatsapp-btn" onclick="sendWhatsAppOrder()">
+        📲 Submit Order on WhatsApp
+    </button>
 
-<td>₹120</td>
+</section>
 
-<td><del>₹150</del></td>
+</main>
 
-<td>
+<footer>
+    <p>© 2026 Varshini Crackers</p>
+    <p>Wholesale Crackers | Sivakasi</p>
+</footer>
 
-<button onclick="minusQty(1)">-</button>
+<script src="script.js"></script>
 
-<span id="qty1">0</span>
-
-<button onclick="plusQty(1)">+</button>
-
-</td>
-
-<td>
-
-<button onclick="addCart(1)">
-Add
-</button>
-
-</td>
-
-</tr>
+</body>
+</html>
